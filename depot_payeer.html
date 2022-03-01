@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payeer</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-xxl">
+				<a class="navbar-brand text-center " id="brandLogo" href="index.html">
+					<p>Takalo-tsotra.mg</p>
+					<p class="text-secondary">SITE FANAKALOZANA VOLA</p>
+				</a>
+			<!-- button for mobiule only -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav"
+				aria-expended="false" aria-label="toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="depot_payeer.html" class="nav-link active">Payeer</a>
+						</li>
+						<li class="nav-item">
+							<a href="depot_perfect_money.html" class="nav-link">Perfect Money</a>
+						</li>
+						<li class="nav-item">
+							<a href="crypto_currency.html" class="nav-link">Crypto Currency</a>
+						</li>
+						<li class="nav-item">
+							<a href="cgu.html" class="nav-link">CGP</a>
+						</li>
+						<li class="nav-item">
+							<a href="support.html" class="nav-link">Support</a>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="container mt-5">
+		<div class="p-3 text-white" id="reserve-and-echange">
+			<p>Solde Payeer Disponible : <span class="text-danger fw-bold"> 500 USD</span></p>
+			<p>Cours de depot : <span class="text-danger fw-bold">3900 ar</span></p>
+		</div>
+
+		<div class="row mt-3 justify-content-center">
+			<div class="col-6">
+				<h4 >Depot Payeer</h4>
+			</div>
+			<div class="col-3">
+				<a href="retrait_payeer.html"><button class="btn btn-danger rounded-pill">Retrait</button></a>
+			</div>
+		</div>
+
+		<div class="row mt-3 justify-content-center">
+			<div class="col-lg-6 col-md-9 col-sm-10">
+				<form id="form">
+					<label class="form-label">Solde Payeer Demmandée : </label>
+				    <div class="input-group input-group-lg mb-3">
+				    	<span class="input-group-text">USD</span>
+				    	<input type="text" name="solde" class="form-control form-control-lg" id="solde_demande" placeholder="15" onblur="tauxDeChange()">
+				    </div>
+
+				    <label class="form-label">Numero du Compte Payeer : </label>
+				    <div class="input-group input-group-lg mb-3">
+				    	<span class="input-group-text"><img src="img/pe.png" width="40" height="30"></span>
+				    	<input type="text" name="numcompte" class="form-control" id="numero_compte" placeholder="PXXXXXXXXXXX">
+				    </div>
+
+				    <label class="form-label">Total à payer via Mvola : </label>
+				    <div class="input-group input-group-lg mb-3">
+				    	<span class="input-group-text"><img src="img/mvola.png" width="40" height="30"></span>
+				    	<input type="text" name="mvola" class="form-control" id="tot_mobile" placeholder="5000" readonly>
+				    </div>
+
+				    <label class="form-label">Numero Mvola : </label>
+				    <div class="input-group input-group-lg mb-3">
+				    	<span class="input-group-text"><img src="img/phone_light.svg"></span>
+				    	<input type="telephone" name="numvola" class="form-control" id="numero_mobile" placeholder="034*******">
+				    </div>
+
+				    <label class="form-label">Nom du compte Mvola : </label>
+				    <div class="input-group input-group-lg mb-3">
+				    	<span class="input-group-text"><img src="img/user.svg" width="40" height="30"></span>
+				    	<input type="textr" name="name_mvola" class="form-control" id="nom_compte_mobile" placeholder="example: Rabe">
+				    </div>
+
+				    <div class="form-check mb-3">
+				    	<label class="form-check-label">
+				    		<input type="checkbox" class="form-check-input" id="check_accepte" name="accepte_me"> Accepte
+				    	</label>
+				    </div>
+
+				    <button type="button" class="btn btn-danger rounded-pill" data-bs-toggle="modal"
+				    data-bs-target="#detail_demande" id="buttonDemanderDepot">Demander</button>
+
+				    <div class="modal fade" id="detail_demande">
+				    	<div class="modal-dialog modal-dialog-centered">
+				    		<div class="modal-content bg-dark">
+				    			
+				    			<!-- header -->
+				    			<div class="modal-header">
+				    				<h4 class="modal-title text-danger">Votre Demande de Depot Payeer</h4>
+				    				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				    			</div>
+
+				    			<!-- modal body -->
+				    			<div class="modal-body">
+				    				
+				    			</div>
+
+				    			<!-- footer of modal -->
+				    			<div class="modal-footer">
+				    				<button  type="button" class="btn btn-secondary rounded-pill"  data-bs-dismiss="modal">Annuler</button>
+					                <button type="submit" class="btn btn-danger rounded-pill ms-1"> Confirmer</button>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </div>
+			    </form>
+			    
+			   
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row mb-2">
+				<div class="text-center">
+					Contact : <a href="mailto:"><img src="img/official-gmail-icon-2020-.svg" width="30px" height="30px"></a>
+					<a href="https//:web.facebook.com/"><img src="img/facebook-icon.svg" width="30px" height="30px"></a>
+				</div>
+				<div class="text-center">
+					&copy; Copyright 2022-<a href="index.html">Takalo-Tsotra</a>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+    <!--    THIS PART IS FOR JS ONLY      -->
+
+	<script src="js/jquery-3.6.0.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
