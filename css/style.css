@@ -1,0 +1,158 @@
+
+body{
+	background-color: #25292f;
+	color: white;
+}
+.vl{
+	border-left: 2px solid grey;
+	height: 80%;
+}
+/* START HOME PAGE */
+/* HEADER */
+#brandLogo p{
+	margin-bottom: 0rem;
+}
+.active{
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+/* END HEADER */
+
+/* SECTION BODY */
+.card{
+	border-radius: 20px;
+	width: /*350px*/;
+}
+.card-body{
+	background-color: #393a3b;
+	border-radius: 20px;
+}
+.btncard .btn{
+	width: 5.3em; 
+	
+}
+
+.card-body div{
+	
+}
+
+.wallet-heading{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 10px;
+}
+
+.wallet-heading p{
+	padding-top: 4px;
+	position: absolute;
+	right: 15px;
+	color: grey;
+	font-size: 10pt;
+}
+
+
+.wallet-heading h4{
+	padding-top: 4px;
+	position: relative;
+	left: 11px;
+}
+
+.action{
+	width: 270px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.action p{
+	font-size: 9pt;
+	color: grey;
+}
+/* END SECTION BODY */
+
+/* END HOME PAGE */
+
+/* START DEPOT_PAYEER STYLE */
+#reserve-and-echange{
+	width: 312px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	background-color: #393a3b;
+}
+
+#reserve-and-echange p{
+	margin-bottom: 10px;
+}
+
+#form div span{
+	position: absolute;
+	z-index: 99;
+	/*padding-top: 10px;*/
+	background-color: #11f0;
+	border-color: #11ffee00;
+	color: white;
+	
+}
+#form div .form-control{
+	padding-left: 65px;
+	position: relative;
+	border: 2px solid white;
+	background-color: #25292f;
+	color: white;
+	border-radius: 17px;
+}
+
+
+/************* RESPONSIVE DESIGN  **************/
+
+/**** LARGE DEVICE ONLY ****/
+@media ( min-width : 1200px){
+
+}
+
+/*** MEDIUM DEVICE ONLY ***/
+@media ( min-width : 992px) and (max-width : 1199px){
+	
+}
+
+/**** SMALL DEVICE ONLY ***/
+@media (min-width : 768px) and (max-width : 991px){
+
+}
+
+/**** EXTRA SMALL DEVICE ONLY ****/
+@media (max-width : 767px){
+	/* HOME PAGE */
+	/* HEADER */
+	#brandLogo p{
+		font-size: 12pt;
+	}
+
+	.navbar-nav{
+		text-align: center;
+	}
+
+/* END HEADER */
+	.card{
+		width: 290px;
+		margin: auto;
+	}
+
+	/* DEPOT ONE */
+	section div div button{
+		width: 132px;
+	}
+
+	form div{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.col-sm-10{
+		flex: 0 0 auto;
+        width: 83.33333333%;
+	}
+}
+
